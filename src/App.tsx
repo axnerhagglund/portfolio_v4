@@ -1,5 +1,6 @@
 import ScrollSection from "./components/ScrollSection/ScrollSection"
 import SectionOne from "./components/SectionOne/SectionOne"
+import SectionThree from "./components/SectionThree/SectionThree"
 import SectionTwo from "./components/SectionTwo/SectionTwo"
 
 
@@ -11,9 +12,14 @@ function App() {
      
         <SectionOne/>
       
-      <ScrollSection>
+       
         <SectionTwo/>
-      </ScrollSection>
+        
+        
+      
+      
+        <SectionThree/>
+      
       
       
     </>

@@ -1,11 +1,12 @@
 import React from 'react'
+import Wave from '../Wawe/Wave.tsx'
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion"
 function SectionOne() {
     const {scrollY }= useScroll()
 
     const opacity: MotionValue<number> = useTransform(scrollY, [0, 300], [1, 0])
   return (
-   
+   <>
     <section className="h-screen flex flex-col items-center justify-center text-[#94DBB2] bg-[#112D29] ">
          <motion.div
                     style={{opacity}}
@@ -22,11 +23,13 @@ function SectionOne() {
                     ease: "easeInOut"
                     
                 }}>
-        <h1 className="text-5xl font-[Poppins] font-bold">Scroll or</h1>
+        <h1 className="text-5xl font-[Poppins] font-extrabold">Scroll or</h1>
         <p className="text-2xl">don't</p>
         </motion.div>
+        
     </section>
-    
+    <Wave topColor="#112D29" bottomColor="#fcf6df"/>
+    </>
   )
 }
 
