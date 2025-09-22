@@ -5,10 +5,6 @@ export interface QuizItem {
     correctAnswer: string
 }
 
-
-
-
-
 export const quizData: QuizItem[] = [
     {
         id: 1,
